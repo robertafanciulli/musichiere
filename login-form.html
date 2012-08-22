@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Musichiere</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.1.1-prova.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.1.1.js"></script>
+</head> 
+<body> 
+
+<div data-role=page data-theme="b" id=home>
+  <div data-role=header>
+   <h1>Musichiere</h1>
+  </div>
+
+
+<div data-role=content>		
+<!--Login form start-->
+<form id="login" action="login.php" method="post" data-ajax="false">
+
+<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+<label for="name" class="ui-input-text">Username:</label>
+<input type="text" value="" id="name" name="name" class="ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-c">
+</div>
+
+<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+<label for="name" class="ui-input-text">Password:</label>
+<input type="password" value="" id="password" name="password" class="ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-c">
+</div>
+
+<fieldset class="ui-grid-a">
+<div class="ui-block-a"><button data-theme="a" type="submit" class="ui-btn-hidden" aria-disabled="false">Login</button></div>
+<div class="ui-block-b"><button data-theme="a" type="reset" class="ui-btn-hidden" aria-disabled="false">Fb connect</button></div>
+  Don't have a login? <a href="register.aspx">Sign Up</a>
+</fieldset>
+
+</form>
+<!-- /Login form end-->
+</div>
+</div>
+</body>
+</html>
